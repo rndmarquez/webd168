@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box; /*bxbb*/
+}
+
+body {
+  background-color: #eaeaea; /*bgc90c7e3*/
+  color: #000000; /*c#fff*/
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /*ffa*/
+}
+
+#wrapper {
+  background-color: #90c7e3; /*bgc#fff */
+}
+
+h1,
+h2,
+h3,
+footer {
+  font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
+}
+h2,
+h3 {
+  color: #1976d2; /* c#1976d2 */
+  text-shadow: 1px 1px #ccc;
+}
+
+div {
+  display: grid;
+  place-items: center;
+}
+
+img {
+  max-width: 50%;
+  max-height: 75%;
+  text-align: center;
+}
+
+p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#intro {
+  border: 1px solid #000000;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.flow {
+  background-color: #f9f4f4;
+  border: 1px solid #000000;
+  margin: 10px;
+}
