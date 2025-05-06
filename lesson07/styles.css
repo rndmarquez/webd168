@@ -191,7 +191,7 @@ footer {
 /* Hamburger bars */
 .bar {
   width: 25px;
-  height: 25px;
+  height: 4px;
   background-color: #fff;
   border-radius: 2px;
 }
