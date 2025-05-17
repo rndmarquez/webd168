@@ -9,6 +9,19 @@ $colors: (
   footer-bg: #000435,
 );
 
+$tablet: 800px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
@@ -30,6 +43,7 @@ section {
   margin: auto;
   width: 60%;
 }
+
 
 ul {
   list-style-type: none;
