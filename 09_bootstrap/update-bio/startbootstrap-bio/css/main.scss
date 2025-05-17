@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+
+$colors: (
+  primary: #90d5ff,
+  primary-light: lighten(#023867, 40%),
+  accent: #fcae28,
+  header-font: #fff,
+  footer-font: #fff,
+  footer-bg: #000435,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+header {
+  background-color: color(primary);
+  height: 90px;
+  text-align: center;
+}
+
+#header-h1 {
+  color: color(header-font);
+  text-align: center;
+  padding-top: 25px;
+}
+
+section {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} //close ul
+
+li {
+  margin-bottom: 10px;
+} //close li
+
+footer {
+  background-color: color(footer-bg);
+  height: 90px;
+}
+footer p {
+  color: color(footer-font);
+  text-align: center;
+  padding-top: 25px;
+}
