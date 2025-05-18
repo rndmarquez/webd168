@@ -1,0 +1,27 @@
+caption {
+  caption-side: top;
+}
+
+.table-dark {
+  --bs-table-bg: #0d6efd;
+}
+
+img {
+  display: block;
+  max-width: 50%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  caption {
+    caption-side: top;
+  }
+}/*# sourceMappingURL=custom.css.map */
