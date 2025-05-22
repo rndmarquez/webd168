@@ -22,18 +22,25 @@ img {
 
 #hov:hover {
   animation-name: test;
-  animation-duration: 10s;
+  animation-duration: 15s;
 }
 
 @keyframes test {
   from {
-    background: #355e3b;
   }
   to {
     background: url(../images/sunset.jpg);
     background-size: cover;
     background-position: center;
   }
+}
+
+#child {
+  transition: transform 1s;
+}
+#parent:hover #child {
+  transform: translateX(100%);
+  animation: 0.5s linear 1s infinite alternate slide-in;
 }
 
 @media (max-width: 768px) {
