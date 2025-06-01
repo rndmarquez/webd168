@@ -1,0 +1,152 @@
+.bg-image {
+  background-size: cover;
+  background-size: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+img {
+  max-width: 100%; /* Ensures the image is never wider than its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  display: block; /* Optional: Removes extra space below the image */
+}
+
+#navbar {
+  font-family: "Roboto Condensed", sans-serif;
+  top: 0.625rem;
+  width: 95%; /* Makes it span the full width of the viewport */
+  z-index: 1000;
+}
+
+#navbar-brand {
+  font-size: 1.5rem;
+}
+
+#navbar .nav-link {
+  font-size: 1.25rem;
+}
+
+.nav-link.active {
+  color: yellow;
+  background-color: none;
+  border-color: none;
+  border-bottom: 0.1875 solid yellow;
+}
+
+#namespace,
+#contactme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 1s ease;
+}
+
+#contactme {
+  width: 80%;
+  padding-top: 5rem;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+#contactme h1 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+#contactme h2 {
+  text-align: center;
+  font-size: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+#contactme form {
+  width: 90%;
+}
+
+#namespace.fade-out,
+#contactme.fade-out {
+  opacity: 0;
+}
+
+#aboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-top: 3.75rem;
+  transition: opacity 1s ease;
+  width: 80%;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutme img {
+  max-width: 100%; /* Make image responsive within its column */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+#aboutintro {
+  margin-top: 5rem;
+}
+
+#aboutme.fade-out {
+  opacity: 0;
+}
+
+#workspace {
+  position: static; /* Or simply remove the position property */
+  top: auto; /* Reset top */
+  left: auto; /* Reset left */
+  transform: none; /* Reset transform */
+  transition: opacity 1s ease;
+  overflow-y: auto;
+  max-height: 90vh;
+  padding-top: 6.25rem;
+  padding-bottom: 5.625rem;
+}
+
+#workspace h1,
+p {
+  text-align: center;
+}
+
+#workspace img {
+  height: 22.9375rem;
+}
+
+#cards {
+  transition: opacity 1s ease;
+  margin-top: 1.875rem;
+}
+
+.ms-auto {
+  margin: auto;
+}
+
+@media (max-width: 760px) {
+  #aboutme {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */
