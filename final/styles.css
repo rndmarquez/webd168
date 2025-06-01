@@ -47,7 +47,7 @@ img {
   color: yellow;
   background-color: none;
   border-color: none;
-  border-bottom: 0.1875 solid yellow;
+  border-bottom: 0.1875rem solid yellow;
 }
 
 #namespace,
