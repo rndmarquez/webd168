@@ -1,6 +1,5 @@
 .bg-image {
   background-size: cover;
-  background-size: center;
   background-repeat: no-repeat;
   filter: brightness(0.5);
   position: fixed;
@@ -45,8 +44,8 @@ img {
 
 .nav-link.active {
   color: yellow;
-  background-color: none;
-  border-color: none;
+  //background-color: none;
+  //border-color: none;
   border-bottom: 0.1875rem solid yellow;
 }
 
@@ -123,7 +122,9 @@ img {
   max-height: 90vh;
   padding-top: 6.25rem;
   padding-bottom: 5.625rem;
+  margin: 2rem;
 }
+
 #workspace h1,
 p {
   text-align: center;
@@ -147,5 +148,20 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     margin: auto;
+  }
+
+  #namespace h1 {
+    font-size: 1.5rem;
+  }
+  #namespace h2 {
+    font-size: 1.25rem;
+  }
+
+  #navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  #navbar .nav-link {
+    font-size: 1rem;
   }
 }
